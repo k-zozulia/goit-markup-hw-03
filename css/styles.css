@@ -3,10 +3,8 @@ body {
   font-weight: 400;
   color: #434455;
   line-height: 1.5;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
 }
 
 h1,
@@ -31,53 +29,6 @@ img {
   display: block;
 }
 
-.container {
-  max-width: 1440px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.header {
-  height: 72px;
-  border-bottom: 1px solid #e7e9fc;
-  display: flex;
-  align-items: center;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-  padding-left: 76px;
-  padding-top: 24px;
-}
-
-.contact-list {
-  display: flex;
-  gap: 40px;
-  padding-top: 24px;
-}
-
-.email {
-  padding-left: 332px;
-}
-
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -87,10 +38,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-}
-
-.logo-header {
-  padding-top: 24px;
+  margin-right: 76px;
 }
 
 .span-header {
@@ -104,6 +52,11 @@ img {
 .contact-link {
   text-decoration: none;
   color: inherit;
+}
+
+.contact-info .contact-list {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-list,
@@ -120,6 +73,12 @@ img {
   text-decoration: none;
 }
 
+.nav-item .nav-link {
+  padding: 24px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus,
@@ -132,26 +91,14 @@ img {
 .hero {
   background-color: #2e2f42;
   letter-spacing: 0.02em;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   text-align: center;
   line-height: 1.07;
-  max-width: 496px;
-
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;;
 }
 
 .order-button {
@@ -162,11 +109,6 @@ img {
   font-family: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 16px 32px;
-  width: 169px;
-  display: inline-block;
-  white-space: nowrap;
-  margin-top: 48px;
 }
 
 .order-button:hover,
@@ -174,30 +116,8 @@ img {
   background-color: #404bbf;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.features-list{
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-}
-
-.feature-item {
-  width: 264px;
-}
-
 .hero-title,
+.feature-title,
 .team-title,
 .team-member-name,
 .portfolio-main-title,
@@ -205,24 +125,17 @@ img {
   letter-spacing: 0.02em;
 }
 
+.feature-title,
 .team-member-name,
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2E2F42;
+  color: #2e2f42;
 }
 
 .team {
-  background-color: #F4F4FD;
-  height: 732px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  padding-top: 72px;
+  background-color: #f4f4fd;
 }
 
 .team-title,
@@ -230,64 +143,45 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  color: #2E2F42;
+  color: #2e2f42;
   text-align: center;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .team-member {
-  background-color: #FFFFFF;
-}
-
-.member-text {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.portfolio-main-title {
-  padding-bottom: 72px;
-}
-
-.portfolio-text {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 32px;
-  border-bottom: #E7E9FC 1px solid;
-  border-right: #E7E9FC 1px solid;
-  border-left: #E7E9FC 1px solid;
-}
-
-.portfolio-list {
-  display: flex;
-  justify-content: center;
-  gap: 34px;
-  flex-wrap: wrap;
-}
-
-.portfolio-item {
-  width: 360px;
+  background-color: #ffffff;
 }
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px;
-}
-
-.footer-container{
-  width: 264px;
 }
 
 .span-footer {
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 .footer-description {
-  color: #F4F4FD;
+  color: #f4f4fd;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
