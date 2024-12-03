@@ -172,7 +172,7 @@ img {
 }
 
 .feature-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 .features-list .feature-item {
@@ -188,9 +188,14 @@ img {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
-.team-title,
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .portfolio-main-title {
   font-weight: 700;
   font-size: 36px;
@@ -200,8 +205,33 @@ img {
   text-transform: capitalize;
 }
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
 .team-member {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+
+.team-list .team-member:last-child {
+  margin-right: 0;
+}
+
+.member-text {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-member-name {
+  margin-bottom: 8px;
 }
 
 .footer {
